@@ -1,0 +1,21 @@
+select * from data;
+
+
+select max([sold price]) from data
+where
+select * from data as d where d.type='detached'
+
+select top 3 percent [sold price], address, type, basement1
+from data order by [Sold Price]desc;
+
+select top 10[sold price], address, type, basement1
+from data order by [Sold Price]desc;
+
+select max([sold price]), community, type, description, bedroom, avg(front) as front, max([sold price])/avg(front) as value_ratio
+from data
+group by community, type, description, bedroom
+order by max([sold price])/avg(front)
+
+select community, type, address, bedroom, [sold price] from data as d
+where type in ('detached') and [sold price] =
+(select max([sold price]) from data)pickering
